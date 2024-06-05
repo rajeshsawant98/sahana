@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Sahana Meetup App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Sahana Meetup App repository! This app allows users to create and join meetups based on their interests, with features such as user authentication, category selection, event notifications, and more.
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Sahana is a feature-rich application designed to simplify the process of organizing and participating in meetups. It leverages modern technologies to provide a seamless and efficient user experience.
 
-### `npm start`
+### Technical Details
+- **Technologies Used**: Firebase, Google SSO, Microsoft Graph API, Zoom API, Slack API, JavaScript, CSS, Firebase Cloud Messaging
+- **Duration**: 10 weeks development timeline
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Key Features Implemented
+- **User Authentication and Profile Management**: Users can create accounts, log in using Google SSO, and manage their profiles.
+- **Meetup Creation and Management**: Users can create and manage meetups, specify details, and track attendance.
+- **Event Notifications and Reminders**: Send notifications and reminders to users about upcoming events.
+- **Event Rating and Reviews**: Users can rate and review events they've attended.
+- **Meetup Type Selection**: Users can select the type of meetup (online or offline) and integrate with various online meeting platforms.
+- **Find Friends**: Users can discover and connect with nearby users who share similar interests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication and Profile Management**: Allow users to create accounts or log in using Google SSO. Users can manage their profiles, including profile picture, bio, and contact information.
+- **Category Selection**: Upon account creation, users choose their preferred categories of interest (minimum 3, maximum 5), such as sports, arts, literature, etc.
+- **Meetup Creation and Management**: Users can create meetups specifying details like category, location, description, date, and maximum attendees. Organizers can track event attendance and mark attendees as "attended" or "no show".
+- **Event Notifications and Reminders**: Send notifications and reminders to users based on their event participation and preferences. Reminders include event details and links to add events to Google Calendar.
+- **Event Rating and Reviews**: Users can rate and review events they've attended, providing feedback for organizers and helping other users make informed decisions.
+- **Meetup Type Selection**: When creating a meetup, users can select the type of event (online or offline). For online events, integrate with Microsoft Graph APIs for Teams meeting invites, Zoom APIs for Zoom meeting invites, and Slack APIs for Slack channel invites.
+- **Subcategories**: Allow users to select subcategories under main categories to further refine their interests and meetup suggestions.
+- **Find Friends**: Users can discover and connect with nearby accounts who share similar interests. Users can send friend requests and accept incoming requests to build their network within the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get started with Sahana, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Navigate to the project directory
+cd sahana-meetup-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Set up environment variables:
+# Create a .env file and add your Firebase, Google API, and other necessary configurations.
 
-### `npm run eject`
+# Start the development server
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+## Documentation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For detailed documentation on installation, usage, and customization, please refer to the [Wiki](wiki-link) section of this repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributors
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Rajesh Sawant
 
-## Learn More
+## Issues
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you encounter any issues or have suggestions for improvement, please open an issue on the [Issues](issues-link) page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT] License - see the [LICENSE](LICENSE) file for details.
