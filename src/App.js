@@ -39,9 +39,9 @@ function App() {
   return (
     <div className="App">
       <div id="signInDiv"></div>
-      {user && (
+      {user && user.picture && (
         <div>
-          <img src={user.picture}></img>
+          <img src={user.picture} alt="Profile Picture"></img>
           <h3>{user.name}</h3>
         </div>
       )}
